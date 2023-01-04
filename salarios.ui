@@ -19,6 +19,10 @@
   <property name="windowTitle">
    <string>Salarios</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="recurso.qrc">
+    <normaloff>:/recursos/resourse/salario.png</normaloff>:/recursos/resourse/salario.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(92, 129, 252);
 border-color: rgb(28, 113, 216);</string>
@@ -214,6 +218,10 @@ color: rgb(255, 255, 255);</string>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionNuevo">
+   <property name="icon">
+    <iconset resource="recurso.qrc">
+     <normaloff>:/recursos/resourse/new.png</normaloff>:/recursos/resourse/new.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Nuevo</string>
    </property>
@@ -222,6 +230,10 @@ color: rgb(255, 255, 255);</string>
    </property>
   </action>
   <action name="actionAbrir">
+   <property name="icon">
+    <iconset resource="recurso.qrc">
+     <normaloff>:/recursos/resourse/abrir.png</normaloff>:/recursos/resourse/abrir.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Abrir</string>
    </property>
@@ -230,6 +242,10 @@ color: rgb(255, 255, 255);</string>
    </property>
   </action>
   <action name="actionGuardar">
+   <property name="icon">
+    <iconset resource="recurso.qrc">
+     <normaloff>:/recursos/resourse/guardar.png</normaloff>:/recursos/resourse/guardar.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Guardar</string>
    </property>
@@ -238,6 +254,10 @@ color: rgb(255, 255, 255);</string>
    </property>
   </action>
   <action name="actionCalcular">
+   <property name="icon">
+    <iconset resource="recurso.qrc">
+     <normaloff>:/recursos/resourse/calculator.jpg</normaloff>:/recursos/resourse/calculator.jpg</iconset>
+   </property>
    <property name="text">
     <string>&amp;Calcular</string>
    </property>
@@ -246,6 +266,10 @@ color: rgb(255, 255, 255);</string>
    </property>
   </action>
   <action name="actionSalir">
+   <property name="icon">
+    <iconset resource="recurso.qrc">
+     <normaloff>:/recursos/resourse/png-transparent-button-computer-icons-exit-angle-rectangle-logo.png</normaloff>:/recursos/resourse/png-transparent-button-computer-icons-exit-angle-rectangle-logo.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Salir</string>
    </property>
@@ -259,6 +283,8 @@ color: rgb(255, 255, 255);</string>
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="recurso.qrc"/>
+ </resources>
  <connections/>
 </ui>
