@@ -220,7 +220,7 @@ color: rgb(255, 255, 255);</string>
   <action name="actionNuevo">
    <property name="icon">
     <iconset resource="recurso.qrc">
-     <normaloff>:/recursos/resourse/new.png</normaloff>:/recursos/resourse/new.png</iconset>
+     <normaloff>:/recursos/resourse/1145597.png</normaloff>:/recursos/resourse/1145597.png</iconset>
    </property>
    <property name="text">
     <string>&amp;Nuevo</string>
