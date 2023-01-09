@@ -37,6 +37,11 @@ private slots:
 
     void on_actionAcerca_de_triggered();
 
+    void on_actionAbrir_triggered();
+
+    void guardar_datos_bandera();
+
+
 private:
     Ui::Salarios *ui;
     Controlador *m_contolador;

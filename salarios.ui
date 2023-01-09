@@ -24,8 +24,7 @@
     <normaloff>:/recursos/resourse/salario.png</normaloff>:/recursos/resourse/salario.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(92, 129, 252);
-border-color: rgb(28, 113, 216);</string>
+   <string notr="true">background-color: rgb(63, 126, 189);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -57,8 +56,7 @@ border-color: rgb(28, 113, 216);</string>
           <item row="0" column="1">
            <widget class="QLineEdit" name="inNombre">
             <property name="styleSheet">
-             <string notr="true">background-color: rgb(119, 118, 123);
-color: rgb(255, 255, 255);</string>
+             <string notr="true">background-color: rgb(170, 255, 255);</string>
             </property>
             <property name="placeholderText">
              <string>Ingrese el nombre</string>
@@ -75,8 +73,8 @@ color: rgb(255, 255, 255);</string>
           <item row="1" column="1">
            <widget class="QSpinBox" name="inHoras">
             <property name="styleSheet">
-             <string notr="true">background-color: rgb(119, 118, 123);
-color: rgb(255, 255, 255);</string>
+             <string notr="true">background-color: rgb(170, 255, 255);
+color: rgb(90, 90, 90);</string>
             </property>
            </widget>
           </item>
@@ -85,6 +83,9 @@ color: rgb(255, 255, 255);</string>
        </item>
        <item>
         <widget class="QGroupBox" name="groupBox">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(170, 255, 255);</string>
+         </property>
          <property name="title">
           <string>Jornada</string>
          </property>
@@ -170,8 +171,7 @@ color: rgb(255, 255, 255);</string>
        <item>
         <widget class="QPlainTextEdit" name="outCalculos">
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(119, 118, 123);
-color: rgb(255, 255, 255);</string>
+          <string notr="true">background-color: rgb(170, 255, 255);</string>
          </property>
          <property name="readOnly">
           <bool>true</bool>
@@ -192,7 +192,7 @@ color: rgb(255, 255, 255);</string>
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivo">
@@ -232,7 +232,7 @@ color: rgb(255, 255, 255);</string>
   <action name="actionAbrir">
    <property name="icon">
     <iconset resource="recurso.qrc">
-     <normaloff>:/recursos/resourse/abrir.png</normaloff>:/recursos/resourse/abrir.png</iconset>
+     <normaloff>:/recursos/resourse/62319.png</normaloff>:/recursos/resourse/62319.png</iconset>
    </property>
    <property name="text">
     <string>&amp;Abrir</string>
@@ -244,7 +244,7 @@ color: rgb(255, 255, 255);</string>
   <action name="actionGuardar">
    <property name="icon">
     <iconset resource="recurso.qrc">
-     <normaloff>:/recursos/resourse/guardar.png</normaloff>:/recursos/resourse/guardar.png</iconset>
+     <normaloff>:/recursos/resourse/disco-flexible.png</normaloff>:/recursos/resourse/disco-flexible.png</iconset>
    </property>
    <property name="text">
     <string>&amp;Guardar</string>
@@ -256,7 +256,7 @@ color: rgb(255, 255, 255);</string>
   <action name="actionCalcular">
    <property name="icon">
     <iconset resource="recurso.qrc">
-     <normaloff>:/recursos/resourse/calculator.jpg</normaloff>:/recursos/resourse/calculator.jpg</iconset>
+     <normaloff>:/recursos/resourse/calculadora.png</normaloff>:/recursos/resourse/calculadora.png</iconset>
    </property>
    <property name="text">
     <string>&amp;Calcular</string>
@@ -268,7 +268,7 @@ color: rgb(255, 255, 255);</string>
   <action name="actionSalir">
    <property name="icon">
     <iconset resource="recurso.qrc">
-     <normaloff>:/recursos/resourse/png-transparent-button-computer-icons-exit-angle-rectangle-logo.png</normaloff>:/recursos/resourse/png-transparent-button-computer-icons-exit-angle-rectangle-logo.png</iconset>
+     <normaloff>:/recursos/resourse/cerrar-sesion.png</normaloff>:/recursos/resourse/cerrar-sesion.png</iconset>
    </property>
    <property name="text">
     <string>&amp;Salir</string>
@@ -278,6 +278,10 @@ color: rgb(255, 255, 255);</string>
    </property>
   </action>
   <action name="actionAcerca_de">
+   <property name="icon">
+    <iconset resource="recurso.qrc">
+     <normaloff>:/recursos/resourse/boton-web-de-ayuda.png</normaloff>:/recursos/resourse/boton-web-de-ayuda.png</iconset>
+   </property>
    <property name="text">
     <string>Acerca de Salarios</string>
    </property>

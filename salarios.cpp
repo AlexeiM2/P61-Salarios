@@ -12,6 +12,7 @@ Salarios::Salarios(QWidget *parent)
 
 Salarios::~Salarios()
 {
+    guardar_datos_bandera();
     delete ui;
 }
 
@@ -86,19 +87,15 @@ void Salarios::on_actionCalcular_triggered()
 }
 
 
-void Salarios::on_actionSalir_triggered()
-{
-    this->close();
-}
-
 
 void Salarios::on_actionGuardar_triggered()
 {
     // Abrir un cuadro de diálogo para seleccionar el path y archivo a guardar
     QString nombreArchivo = QFileDialog::getSaveFileName(this,
                                                    "Guardar calculos de salarios",
-                                                   QDir::home().absolutePath() + "/salarios.txt",
+                                                   QDir::home().absolutePath() + "/salarios.sal",
                                                    "Archivos de texto (*.txt)");
+
     // Crear un objeto File
     QFile archivo(nombreArchivo);
     // Tartar de abrir para escritura
@@ -135,3 +132,45 @@ void Salarios::on_actionAcerca_de_triggered()
 
 }
 
+void Salarios::on_actionAbrir_triggered()
+{
+    QString texto = "";
+        QFile archivo(QFileDialog::getOpenFileName(this, "Abrir archivo", "", "Archivo de texto(*.txt)"));
+
+        if(!archivo.open(QIODevice::ReadOnly | QIODevice::Text)){
+            QMessageBox::warning(this, "Salarios", "No se puede abrir el archivo");
+        }else{
+            QTextStream mostrar(&archivo);
+            while(!mostrar.atEnd()){
+                texto += mostrar.readLine() + '\n';
+            }
+            archivo.close();
+        }
+        ui->outCalculos->appendPlainText(texto);
+
+}
+
+void Salarios::guardar_datos_bandera()
+{
+    QString informacion = ui->outCalculos->toPlainText();
+
+        if(informacion.isEmpty()){
+            this->close();
+
+        }else {
+            QMessageBox::StandardButton reply;
+            reply = QMessageBox::question(this, "Pregunta", "Desea guardar la información?",
+                    QMessageBox::Save | QMessageBox::Close);
+            if(reply == QMessageBox::Save){
+                on_actionGuardar_triggered();
+            }
+            if(reply == QMessageBox::Close){
+                this->close();
+            }
+        }
+}
+
+void Salarios::on_actionSalir_triggered()
+{
+    guardar_datos_bandera();
+}
